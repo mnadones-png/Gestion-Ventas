@@ -1,3 +1,13 @@
+/**
+ * Pantalla: Cálculo de IVA
+ * Calcula neto e IVA a partir de un monto total con IVA y un cliente.
+ * Permite acumular múltiples cálculos en una lista y guardarlos mediante StorageService.
+ *
+ * Estado:
+ * - cliente: string
+ * - monto: string (formateado, total con IVA)
+ * - calculos: Array<{ cliente, fecha, montoTotal, neto, iva, porcentajeIva }>
+ */
 import React, { useState } from 'react';
 import {
   View,

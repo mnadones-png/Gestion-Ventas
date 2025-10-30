@@ -1,3 +1,8 @@
+/**
+ * Pantalla: Historial de Ventas
+ * Lista ventas guardadas en AsyncStorage con búsqueda y refresco.
+ * Permite navegar al detalle de una venta específica.
+ */
 import React, { useState, useEffect } from 'react';
 import {
   View,

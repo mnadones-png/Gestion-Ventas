@@ -1,3 +1,14 @@
+/**
+ * Aplicación principal de Gestión de Ventas (Verdulería Rafita).
+ * Configura la navegación con un Stack Navigator y registra las pantallas
+ * principales: Home, Registro de Ventas, Historial y Detalle de Ventas,
+ * Cálculo de IVA y su Historial, además de Configuración.
+ *
+ * Tecnologías:
+ * - React Native + Expo
+ * - @react-navigation/stack para navegación
+ * - react-native-safe-area-context para manejo de áreas seguras
+ */
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';

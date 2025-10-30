@@ -1,3 +1,16 @@
+/**
+ * Pantalla: Detalle de Cálculo de IVA
+ * Muestra un cálculo guardado con el desglose por cliente, montos y totales.
+ * Permite eliminar el cálculo del almacenamiento local.
+ *
+ * Props:
+ * - route.params.calculation: {
+ *     id: string,
+ *     fecha: ISOString,
+ *     calculos: Array<{ cliente: string, montoTotal: number, neto: number, iva: number, porcentajeIva: number }>,
+ *     totales: { totalMonto: number, totalNeto: number, totalIva: number }
+ *   }
+ */
 import React from 'react';
 import {
   View,

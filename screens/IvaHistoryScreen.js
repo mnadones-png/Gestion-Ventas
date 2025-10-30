@@ -1,3 +1,7 @@
+/**
+ * Pantalla: Historial de IVA
+ * Lista cálculos de IVA guardados, permite buscar, refrescar y navegar al detalle.
+ */
 import React, { useState, useEffect } from 'react';
 import {
   View,

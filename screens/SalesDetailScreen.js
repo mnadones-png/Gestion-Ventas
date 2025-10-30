@@ -1,3 +1,21 @@
+/**
+ * Pantalla: Detalle de Venta
+ * Muestra una venta seleccionada con desglose por método de pago, efectivo y gastos.
+ * Calcula el total general y permite eliminar la venta del almacenamiento local.
+ *
+ * Props:
+ * - route.params.sale: objeto venta con forma
+ *   {
+ *     id: string,
+ *     date: ISOString,
+ *     transferencias: Array<{ description?: string, amount: number }> | { description?: string, amount: number },
+ *     getnet: Array<...> | { ... },
+ *     mercadoPago: Array<...> | { ... },
+ *     deudas: Array<...> | { ... },
+ *     efectivo: { amounts: Record<string,string>, total: number },
+ *     gastos: Array<{ description?: string, amount: number }> | { description?: string, amount: number }
+ *   }
+ */
 import React from 'react';
 import {
   View,

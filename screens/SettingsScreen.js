@@ -1,3 +1,9 @@
+/**
+ * Pantalla: Configuración
+ * Ofrece switches y acciones administrativas (placeholder) como limpiar datos,
+ * alternar notificaciones, respaldo automático y modo oscuro.
+ * La limpieza completa está preparada para implementar con StorageService.
+ */
 import React, { useState } from 'react';
 import {
   View,

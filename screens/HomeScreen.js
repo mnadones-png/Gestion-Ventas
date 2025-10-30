@@ -1,3 +1,8 @@
+/**
+ * Pantalla: Inicio
+ * Presenta el menú principal de la app y navega a:
+ * Registrar Ventas, Historial de Ventas, Cálculo de IVA, Historial de IVA y Configuración.
+ */
 import React from 'react';
 import {
   View,

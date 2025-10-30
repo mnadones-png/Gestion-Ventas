@@ -1,3 +1,19 @@
+/**
+ * Pantalla: Registrar Ventas
+ * Permite ingresar las ventas del día separadas por método de pago:
+ * - Transferencias, Getnet, Mercado Pago, Deudas, Efectivo y Gastos.
+ * Calcula totales y guarda la venta en almacenamiento local mediante StorageService.
+ *
+ * Estado principal:
+ * - transferencias, getnet, mercadoPago, deudas: arrays de { id, description, amount(string formateado) }
+ * - cashBills: objeto con claves de billetes ('20.000', '10.000', etc.) y valores string numéricos
+ * - gastos: array de gastos { id, description, amount }
+ *
+ * Funciones clave:
+ * - updatePaymentMethod/addPaymentMethod/removePaymentMethod: CRUD de entradas por método de pago
+ * - calculateCashTotal/calculateTotalGenerated/calculateTotalGastos: cálculo de totales
+ * - validateAndSaveSale: normaliza datos y persiste la venta con StorageService.saveSale
+ */
 import React, { useState } from 'react';
 import {
   View,
